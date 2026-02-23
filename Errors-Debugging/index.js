@@ -13,15 +13,18 @@ const data2 = [4, 5, 6];
 
 console.log(calculateTotal(data1));
 console.log(calculateTotal(data2));
+console.log(data1.length); 
 
 function calculateAverage(numbers) {
 /* data1 add numbers (1+2+3)
 /* data1 divided by total numbers of #s */
-if (numbers.length === 0) return 0; 
+if (numbers.length === 0) return 0;  
 
+/* else if error handling here */
+/* tell user they must enter numbers */
 const total = calculateTotal(numbers); 
 
-return total/numbers.length 
-}
+return total/numbers.length; 
+} 
 
 console.log(calculateAverage(data1)); 
